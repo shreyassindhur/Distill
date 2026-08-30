@@ -39,7 +39,7 @@ function playChime() {
   o.connect(g).connect(ctx.destination); o.start(); o.stop(ctx.currentTime + 0.5);
 }
 
-const API = process.env.NEXT_PUBLIC_API_URL || "http://localhost:8000";
+const API = process.env.NEXT_API_URL || "http://localhost:8000";
 const SESSION_KEY = "distill_session";
 const CREDIT_CACHE = "distill_credits_v2";
 const HISTORY_KEY = "distill_history_v2";
